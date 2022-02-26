@@ -1,0 +1,12 @@
+.qualityCard {
+  width: 75%;
+  padding: 2.25rem 1rem;
+  box-shadow: 0px 3px 8px -1px var(--dark-grey);
+}
+
+.qualityCardText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}

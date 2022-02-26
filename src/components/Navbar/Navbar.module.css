@@ -1,0 +1,21 @@
+.navbarContainer {
+  width: 100%;
+  height: 2%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  outline: var(--secondary-bg-color) solid 1px;
+  background-color: var(--main-bg-color);
+}
+
+.inamLogoMobile {
+  width: 30%;
+  height: auto;
+  align-self: center;
+}
+
+.hamburgerMenuIcon {
+  width: 15%;
+  height: auto;
+  align-self: center;
+}

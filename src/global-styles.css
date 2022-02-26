@@ -1,0 +1,28 @@
+:root {
+  /* Colors */
+
+  --main-bg-color: hsl(214, 100%, 31%);
+  --secondary-bg-color: hsl(0, 0%, 90%);
+  --light-blue: hsl(214, 45%, 66%);
+  --medium-blue: hsl(214, 45%, 54%);
+  --dark-blue: hsl(214, 60%, 43%);
+  --button-color: hsl(214, 46%, 57%);
+  --dark-grey: hsl(210, 8%, 14%);
+
+  /* Typography */
+
+  --font-family-heading: "Roboto";
+  --font-family-paragraph: "Nunito Sans";
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 900;
+
+  --font-size-header: 3rem;
+  --font-size-title: 2rem;
+  --font-size-subtitle: 1.5rem;
+  --font-size-regular: 1.125rem;
+
+  --font-line-height: 2rem;
+}
