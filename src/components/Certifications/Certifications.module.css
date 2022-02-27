@@ -1,0 +1,28 @@
+.certificationsSection {
+  background-color: var(--secondary-bg-color);
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.certificationHeader {
+  color: #8e8e8e;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.certificationsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.certificationIcon {
+  width: 50%;
+  height: auto;
+}

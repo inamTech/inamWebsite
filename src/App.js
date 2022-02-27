@@ -1,4 +1,5 @@
 import BlueBg from "./components/BlueBg/BlueBg";
+import Certifications from "./components/Certifications/Certifications";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import QualityCards from "./components/QualityCards/QualityCards";
@@ -12,6 +13,7 @@ function App() {
       </BlueBg>
       <QualityCards />
       <Services />
+      <Certifications />
     </div>
   );
 }
