@@ -1,0 +1,108 @@
+.contactUsSection {
+  background-color: var(--secondary-bg-color);
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.contactUsHeader {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contactUsParagraph {
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: var(--font-line-height);
+}
+
+.contactUsMethods {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.contactUsMethodContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.contactUsMethodIcon {
+  width: 15%;
+  height: auto;
+}
+
+.contactUsMethodHeader {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contactUsMethodParagraph {
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+  text-align: center;
+  line-height: var(--font-line-height);
+}
+
+.contactUsForm {
+  background-color: var(--button-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  row-gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactUsFormHeader {
+  color: white;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  margin-top: 1rem;
+}
+
+.contactUsFormTextInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.contactUsFormInput {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  resize: none;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+}
+
+.contactUsFormInput::placeholder {
+  color: #8e8e8e;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+}
+
+.contactUsFormButton {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-medium);
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
