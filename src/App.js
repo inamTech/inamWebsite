@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import QualityCards from "./components/QualityCards/QualityCards";
 import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
+import WhyInam from "./components/WhyInam/WhyInam";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <Certifications />
       <AboutUs />
       <Team />
+      <WhyInam />
       <ContactUs />
       <Footer />
     </div>

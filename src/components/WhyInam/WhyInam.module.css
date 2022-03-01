@@ -1,0 +1,25 @@
+.whyInamSection {
+  background-color: var(--main-bg-color);
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.whyInamHeader {
+  color: white;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.whyInamParagraph {
+  color: white;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+  text-align: center;
+  line-height: var(--font-line-height);
+}
