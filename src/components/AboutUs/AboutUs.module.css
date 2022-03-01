@@ -38,8 +38,7 @@
   font-size: var(--font-size-regular);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
-  border: none;
-  outline: var(--button-color) solid 1px;
-  width: 50%;
-  padding: 0.5rem 0rem;
+  border: 1px solid var(--button-color);
+  outline: none;
+  padding: 0.5rem;
 }

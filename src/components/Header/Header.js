@@ -2,6 +2,8 @@
 import React from "react";
 import styles from "./Header.module.css";
 import headerImg from "../../images/header-img.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 export default function Header() {
   return (
@@ -15,13 +17,15 @@ export default function Header() {
         </p>
         <button className={styles.headerButton}>HIRE US</button>
       </div>
-      <div className={styles.headerImgContainer}>
-        <img
-          className={styles.headerImg}
-          src={headerImg}
-          alt="Computer with INAM logo on the screen."
-        />
-      </div>
+      <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
+        <div className={styles.headerImgContainer}>
+          <img
+            className={styles.headerImg}
+            src={headerImg}
+            alt="Computer with INAM logo on the screen."
+          />
+        </div>
+      </AnimationOnScroll>
     </div>
   );
 }
