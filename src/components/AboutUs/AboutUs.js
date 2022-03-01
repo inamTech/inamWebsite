@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 
 export default function AboutUs() {
   return (
-    <div className={styles.aboutUsSection}>
+    <div id="aboutUs" className={styles.aboutUsSection}>
       <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
         <h1 className={styles.aboutUsHeader}>About Us</h1>
       </AnimationOnScroll>

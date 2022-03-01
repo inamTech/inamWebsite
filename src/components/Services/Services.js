@@ -16,7 +16,7 @@ export default function Services() {
     justifyContent: "center",
   };
   return (
-    <div className={styles.servicesContainer}>
+    <div id="services" className={styles.servicesContainer}>
       <h1 className={styles.servicesHeader}>Our Services</h1>
       <div className={styles.servicesCardsContainer}>
         <AnimationOnScroll

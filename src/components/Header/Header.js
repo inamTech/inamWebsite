@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import headerImg from "../../images/header-img.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -15,7 +16,17 @@ export default function Header() {
           corrupti accusamus accusantium ullam rem ipsa vero sequi fugiat, odit
           ad.
         </p>
-        <button className={styles.headerButton}>HIRE US</button>
+        <button className={styles.headerButton}>
+          <Link
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            HIRE US
+          </Link>
+        </button>
       </div>
       <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
         <div className={styles.headerImgContainer}>

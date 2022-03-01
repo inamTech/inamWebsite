@@ -7,7 +7,11 @@ import "animate.css/animate.min.css";
 
 export default function QualityCard(props) {
   return (
-    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+    <AnimationOnScroll
+      offset={20}
+      animateIn="animate__fadeIn"
+      animateOnce={true}
+    >
       <div
         className={styles.qualityCard}
         style={{ backgroundColor: props.bgColor }}

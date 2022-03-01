@@ -1,6 +1,7 @@
 .contactUsSection {
   background-color: var(--secondary-bg-color);
   padding: 3rem 1rem 1rem 1rem;
+  overflow: hidden;
 }
 
 .contactUsHeader {

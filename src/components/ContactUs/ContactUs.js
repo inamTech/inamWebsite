@@ -10,7 +10,7 @@ import "animate.css/animate.min.css";
 
 export default function ContactUs() {
   return (
-    <div className={styles.contactUsSection}>
+    <div id="contactUs" className={styles.contactUsSection}>
       <AnimationOnScroll animateIn="animate__slideInLeft" animateOnce={true}>
         <h1 className={styles.contactUsHeader}>Contact Us</h1>
       </AnimationOnScroll>

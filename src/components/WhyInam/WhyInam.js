@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 
 export default function WhyInam() {
   return (
-    <div className={styles.whyInamSection}>
+    <div id="whyInam" className={styles.whyInamSection}>
       <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
         <h1 className={styles.whyInamHeader}>Why Inam</h1>
       </AnimationOnScroll>

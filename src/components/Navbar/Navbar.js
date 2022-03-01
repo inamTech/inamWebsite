@@ -8,7 +8,7 @@ import hamburgerMenu from "../../images/hamburger-menu-icon.png";
 
 export default function Navbar() {
   return (
-    <div className={styles.navbarContainer}>
+    <div id="navbar" className={styles.navbarContainer}>
       <img className={styles.inamLogoMobile} src={inamLogo} alt="INAM Logo" />
       <img
         className={styles.hamburgerMenuIcon}
