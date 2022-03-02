@@ -1,0 +1,70 @@
+import React from "react";
+import { Link } from "react-scroll";
+import styles from "./NavLinks.module.css";
+
+export default function NavLinks(props) {
+  return (
+    <ul className={styles.navMobileLinksContainer}>
+      <li className={styles.navMobileLink}>
+        <Link
+          to="navbar"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={props.onClick}
+        >
+          <div className={styles.testClass}>Home</div>
+        </Link>
+      </li>
+      <li className={styles.navMobileLink}>
+        <Link
+          to="aboutUs"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={props.onClick}
+        >
+          <div className={styles.testClass}>About Us</div>
+        </Link>
+      </li>
+      <li className={styles.navMobileLink}>
+        <Link
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={props.onClick}
+        >
+          <div className={styles.testClass}>Services</div>
+        </Link>
+      </li>
+      <li className={styles.navMobileLink}>
+        <Link
+          to="whyInam"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={props.onClick}
+        >
+          <div className={styles.testClass}>Why INAM</div>
+        </Link>
+      </li>
+      <li className={styles.navMobileLink}>
+        <Link
+          to="contactUs"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onClick={props.onClick}
+        >
+          <div className={styles.testClass}>Contact Us</div>
+        </Link>
+      </li>
+    </ul>
+  );
+}
