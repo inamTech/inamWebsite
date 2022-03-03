@@ -14,7 +14,7 @@ export default function NavLinks(props) {
           duration={500}
           onClick={props.onClick}
         >
-          <div className={styles.testClass}>Home</div>
+          <div className={styles.navLinkTextContainer}>Home</div>
         </Link>
       </li>
       <li className={styles.navMobileLink}>
@@ -26,7 +26,7 @@ export default function NavLinks(props) {
           duration={500}
           onClick={props.onClick}
         >
-          <div className={styles.testClass}>About Us</div>
+          <div className={styles.navLinkTextContainer}>About Us</div>
         </Link>
       </li>
       <li className={styles.navMobileLink}>
@@ -38,7 +38,7 @@ export default function NavLinks(props) {
           duration={500}
           onClick={props.onClick}
         >
-          <div className={styles.testClass}>Services</div>
+          <div className={styles.navLinkTextContainer}>Services</div>
         </Link>
       </li>
       <li className={styles.navMobileLink}>
@@ -50,7 +50,7 @@ export default function NavLinks(props) {
           duration={500}
           onClick={props.onClick}
         >
-          <div className={styles.testClass}>Why INAM</div>
+          <div className={styles.navLinkTextContainer}>Why INAM</div>
         </Link>
       </li>
       <li className={styles.navMobileLink}>
@@ -62,7 +62,7 @@ export default function NavLinks(props) {
           duration={500}
           onClick={props.onClick}
         >
-          <div className={styles.testClass}>Contact Us</div>
+          <div className={styles.navLinkTextContainer}>Contact Us</div>
         </Link>
       </li>
     </ul>

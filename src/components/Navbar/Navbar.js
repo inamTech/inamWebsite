@@ -76,7 +76,8 @@ export default function Navbar() {
       </button>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
-        <p className={styles.exitNavMenuIcon}>X</p>
+        {/* <p className={styles.exitNavMenuIcon}>X</p> */}
+        <i className={`${styles.exitNavMenuIcon} fa-solid fa-xmark`}></i>
         <NavLinks onClick={closeDrawerHandler} />
       </SideDrawer>
     </div>

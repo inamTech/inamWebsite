@@ -29,7 +29,8 @@
   border-bottom: lpx solid var(--dark-grey);
 }
 
-.testClass {
+.navLinkTextContainer {
   border-bottom: 1px solid var(--secondary-bg-color);
   padding-bottom: 1rem;
+  cursor: pointer;
 }

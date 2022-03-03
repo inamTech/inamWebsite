@@ -58,6 +58,10 @@
   display: none;
 }
 
+.exitNavMenuIcon {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 871px) {
   .navLinksContainer {
     display: none;
