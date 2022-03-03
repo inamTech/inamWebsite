@@ -18,7 +18,6 @@ export default function Navbar() {
   }
 
   function closeDrawerHandler() {
-    console.log("close drawer");
     setDrawerIsOpen(false);
   }
   return (
