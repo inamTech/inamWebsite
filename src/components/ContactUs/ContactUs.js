@@ -7,8 +7,23 @@ import emailIcon from "../../images/email-icon.png";
 import phoneIcon from "../../images/phone-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
+import emailjs from 'emailjs-com';
+
 
 export default function ContactUs() {
+
+  function sendEmail(e) {
+    console.log("Sending Email")
+    e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs.sendForm('service_ornhkl5', 'template_1s2g7fp', e.target, 'W_YlZRNBoMR-MsRK6')
+      .then((result) => {
+          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div id="contactUs" className={styles.contactUsSection}>
       <AnimationOnScroll animateIn="animate__slideInLeft" animateOnce={true}>
@@ -69,7 +84,7 @@ export default function ContactUs() {
       {/* Beginning of contact us form */}
       <div className={styles.contactUsForm}>
         <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-        <form action="post">
+        <form action="post" onSubmit={sendEmail}>
           <div className={styles.contactUsFormTextInputs}>
             <input
               className={styles.contactUsFormInput}
@@ -95,8 +110,8 @@ export default function ContactUs() {
               placeholder="Message..."
             ></textarea>
           </div>
-        </form>
-        <button className={styles.contactUsFormButton}>SEND MESSAGE</button>
+          <button type="submit" className={styles.contactUsFormButton}>SEND MESSAGE</button>
+        </form> 
       </div>
     </div>
   );
