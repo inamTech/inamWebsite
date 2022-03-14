@@ -1,5 +1,10 @@
 .aboutUsSection {
   background-color: var(--main-bg-color);
+  background-image: url("../../images/bg-art-1.png"),
+    url("../../images/bg-art-2.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 250px;
   padding: 1rem 1.5rem 3rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -45,6 +50,18 @@
   outline: none;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUsSection {
+    background-color: var(--main-bg-color);
+    background-image: none;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 871px) {

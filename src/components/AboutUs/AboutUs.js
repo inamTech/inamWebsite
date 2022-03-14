@@ -5,6 +5,8 @@ import styles from "./AboutUs.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import { Link } from "react-scroll";
+import bgArt1 from "../../images/bg-art-1.png";
+import bgArt2 from "../../images/bg-art-2.png";
 
 export default function AboutUs() {
   return (
