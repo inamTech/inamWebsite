@@ -20,17 +20,40 @@ export default function Navbar() {
   function closeDrawerHandler() {
     setDrawerIsOpen(false);
   }
+
+  function refreshPage() {
+    window.scrollTo(0, 0);
+    window.location.reload(false);
+  }
+
   return (
     <div id="navbar" className={styles.navbarContainer}>
-      <img className={styles.inamLogoMobile} src={inamLogo} alt="INAM Logo" />
+      <img
+        onClick={refreshPage}
+        className={styles.inamLogoMobile}
+        src={inamLogo}
+        alt="INAM Logo"
+      />
       <ul className={styles.navLinksContainer}>
         <li className={styles.navLink}>
-          <Link to="navbar" spy={true} smooth={true} offset={0} duration={500}>
+          <Link
+            to="header"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             Home
           </Link>
         </li>
         <li className={styles.navLink}>
-          <Link to="aboutUs" spy={true} smooth={true} offset={0} duration={500}>
+          <Link
+            to="aboutUs"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             About Us
           </Link>
         </li>
@@ -39,14 +62,20 @@ export default function Navbar() {
             to="services"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-125}
             duration={500}
           >
             Services
           </Link>
         </li>
         <li className={styles.navLink}>
-          <Link to="whyInam" spy={true} smooth={true} offset={0} duration={500}>
+          <Link
+            to="whyInam"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             Why INAM
           </Link>
         </li>
@@ -55,7 +84,7 @@ export default function Navbar() {
             to="contactUs"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             duration={500}
           >
             <button className={styles.navbarButton}>Contact Us</button>

@@ -6,16 +6,26 @@ import inamLogo from "../../images/inam-logo.png";
 import { Link } from "react-scroll";
 
 export default function Footer() {
+  function refreshPage() {
+    window.scrollTo(0, 0);
+    window.location.reload(false);
+  }
+
   return (
     <div className={styles.footerSection}>
-      <img className={styles.inamLogo} src={inamLogo} alt="INAM logo" />
+      <img
+        onClick={refreshPage}
+        className={styles.inamLogo}
+        src={inamLogo}
+        alt="INAM logo"
+      />
       <div className={styles.footerLinksContainer}>
         <Link
           className={styles.footerLink}
-          to="navbar"
+          to="header"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
         >
           Home
@@ -25,7 +35,7 @@ export default function Footer() {
           to="aboutUs"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
         >
           About Us
@@ -35,7 +45,7 @@ export default function Footer() {
           to="services"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-125}
           duration={500}
         >
           Services
@@ -45,7 +55,7 @@ export default function Footer() {
           to="whyInam"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={500}
         >
           Why INAM
@@ -55,7 +65,7 @@ export default function Footer() {
           to="contactUs"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={500}
         >
           Contact Us

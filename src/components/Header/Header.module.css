@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: bottom;
-  margin-top: 2rem;
+  margin-top: 6rem;
   display: flex;
   width: 100%;
   height: 35rem;
@@ -60,13 +60,19 @@
 }
 
 .headerImgContainer {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .headerImg {
+  position: relative;
   width: 20rem;
   height: auto;
+}
+
+.hireUsLink {
+  text-align: left;
 }
 
 /**
@@ -100,7 +106,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: bottom;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -109,6 +115,10 @@
     row-gap: 3rem;
     overflow: hidden;
     justify-content: flex-start;
+  }
+
+  .hireUsLink {
+    text-align: center;
   }
 
   .headerImg {

@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 
 export default function Header() {
   return (
-    <div className={styles.headerContainer}>
+    <div id="header" className={styles.headerContainer}>
       <div className={styles.headerText}>
         <h1 className={styles.headerTitle}>Lorem ipsum dolor</h1>
         <p className={styles.headerBody}>
@@ -16,7 +16,14 @@ export default function Header() {
           corrupti accusamus accusantium ullam rem ipsa vero sequi fugiat, odit
           ad.
         </p>
-        <Link to="contactUs" spy={true} smooth={true} offset={0} duration={500}>
+        <Link
+          className={styles.hireUsLink}
+          to="contactUs"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
           <button className={styles.headerButton}>HIRE US</button>
         </Link>
       </div>
