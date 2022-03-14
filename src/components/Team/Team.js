@@ -3,10 +3,10 @@
 import React from "react";
 import styles from "./Team.module.css";
 import TeamMemberCard from "./TeamMemberCard/TeamMemberCard";
-import profilePic1 from "../../images/profilePic-1.png";
-import profilePic2 from "../../images/profilePic-2.png";
-import profilePic3 from "../../images/profilePic-3.png";
-import profilePic4 from "../../images/profilePic-4.png";
+import johnByrdPic from "../../images/head-shot-johnByrd.jpg";
+import calvinDavisPic from "../../images/head-shot-calvinDavis.jpg";
+import chrisDavisPic from "../../images/head-shot-chrisDavis.jpg";
+import shawnSmithPic from "../../images/head-shot-shawnSmith.jpg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
@@ -26,9 +26,9 @@ export default function Team() {
           style={animationOnScrollStyles}
         >
           <TeamMemberCard
-            picture={profilePic1}
-            name="David Ferry"
-            position="CO-FOUNDER OF COMPANY"
+            picture={johnByrdPic}
+            name="John Byrd"
+            position="Vice President"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -37,9 +37,9 @@ export default function Team() {
           style={animationOnScrollStyles}
         >
           <TeamMemberCard
-            picture={profilePic2}
-            name="Andy Newman"
-            position="CO-FOUNDER OF COMPANY"
+            picture={calvinDavisPic}
+            name="Calvin Davis"
+            position="Vice President"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -48,9 +48,9 @@ export default function Team() {
           style={animationOnScrollStyles}
         >
           <TeamMemberCard
-            picture={profilePic3}
-            name="Mark Pain"
-            position="CTO OF COMPANY"
+            picture={chrisDavisPic}
+            name="Chris Davis"
+            position="Vice President"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -59,9 +59,9 @@ export default function Team() {
           style={animationOnScrollStyles}
         >
           <TeamMemberCard
-            picture={profilePic4}
-            name="Caleb Henderson"
-            position="CEO OF COMPANY"
+            picture={shawnSmithPic}
+            name="Shawn Smith"
+            position="President"
           />
         </AnimationOnScroll>
       </div>

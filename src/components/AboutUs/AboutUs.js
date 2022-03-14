@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./AboutUs.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
+import { Link } from "react-scroll";
 
 export default function AboutUs() {
   return (
@@ -32,7 +33,9 @@ export default function AboutUs() {
         animateOnce={true}
         delay={250}
       >
-        <button className={styles.aboutUsbutton}>LEARN MORE</button>
+        <Link to="whyInam" spy={true} smooth={true} offset={0} duration={500}>
+          <button className={styles.aboutUsbutton}>LEARN MORE</button>
+        </Link>
       </AnimationOnScroll>
     </div>
   );

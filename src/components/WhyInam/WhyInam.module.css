@@ -1,10 +1,10 @@
 .whyInamSection {
   background-color: var(--main-bg-color);
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
   display: flex;
-  flex-direction: column;
   row-gap: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
 .whyInamHeader {
@@ -12,19 +12,37 @@
   font-family: var(--font-family-heading);
   font-size: var(--font-size-header);
   font-weight: var(--font-weight-bold);
-  text-align: center;
-  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .whyInamParagraph {
   color: white;
   font-family: var(--font-family-paragraph);
   font-size: var(--font-size-regular);
-  text-align: center;
   max-width: 70ch;
-  margin-right: auto;
-  margin-left: auto;
+  width: 80%;
   line-height: var(--font-line-height);
+  padding-right: 1rem;
+}
+
+.teamGroupPic {
+  width: 400px;
+  height: auto;
+  box-shadow: 0px 3px 8px -1px var(--dark-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .whyInamSection {
+    flex-direction: column;
+  }
+  .whyInamHeader {
+    text-align: center;
+  }
+
+  .whyInamParagraph {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 871px) {
