@@ -1,21 +1,23 @@
 .headerContainer {
   background-color: var(--main-bg-color);
   background-image: url("../../images/bg-art-header.png");
-  background-size: 1200px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: bottom;
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: 35rem;
   padding: 1rem;
   row-gap: 3rem;
   overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .headerText {
+  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
@@ -24,32 +26,29 @@
 .headerTitle {
   color: white;
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-header);
   font-weight: var(--font-weight-extra-bold);
-  text-align: center;
+  text-align: left;
   padding-top: 1rem;
 }
 
 .headerBody {
   color: white;
   font-family: var(--font-family-paragraph);
-  font-size: var(--font-size-regular);
+  font-size: var(--font-size-subtitle);
   line-height: var(--font-line-height);
-  text-align: center;
+  text-align: left;
 }
 
 .headerButton {
   width: 25%;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0.5rem;
   box-shadow: 0px 4px 13px -1px var(--dark-grey);
   background-color: var(--button-color);
   cursor: pointer;
   color: white;
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-regular);
-
+  font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-medium);
   border: none;
   outline: none;
@@ -61,7 +60,7 @@
 }
 
 .headerImg {
-  width: 12rem;
+  width: 20rem;
   height: auto;
 }
 
@@ -99,5 +98,79 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 871px) {
+  .headerContainer {
+    background-color: var(--main-bg-color);
+    background-image: url("../../images/bg-art-header.png");
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35rem;
+    padding: 1rem;
+    row-gap: 3rem;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .headerImg {
+    width: 12rem;
+    height: auto;
+  }
+
+  .headerText {
+    width: 100%;
+  }
+
+  .headerTitle {
+    color: white;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-extra-bold);
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .headerBody {
+    color: white;
+    font-family: var(--font-family-paragraph);
+    font-size: var(--font-size-subtitle);
+    line-height: var(--font-line-height);
+    text-align: center;
+  }
+
+  .headerButton {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 13px -1px var(--dark-grey);
+    background-color: var(--button-color);
+    cursor: pointer;
+    color: white;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-medium);
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  .headerContainer {
+    background-size: 1440px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .headerContainer {
+    background-repeat: repeat;
   }
 }

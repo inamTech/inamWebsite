@@ -9,9 +9,10 @@
 }
 
 .inamLogoMobile {
-  width: 7rem;
+  width: 10rem;
   height: auto;
   align-self: center;
+  margin-left: 2rem;
 }
 
 .navLinksContainer {
@@ -21,6 +22,7 @@
   align-self: center;
   align-items: center;
   column-gap: 3rem;
+  margin-right: 2rem;
 }
 
 .navLink {
@@ -28,6 +30,7 @@
   font-family: var(--font-family-heading);
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-medium);
+  cursor: pointer;
 }
 
 .navbarButton {
@@ -46,15 +49,6 @@
 }
 
 .hamburgerMenuButton {
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.hamburgerMenuIcon {
-  width: 3rem;
-  height: auto;
-  align-self: center;
   display: none;
 }
 
@@ -63,11 +57,26 @@
 }
 
 @media screen and (max-width: 871px) {
+  .inamLogoMobile {
+    width: 7rem;
+    height: auto;
+    align-self: center;
+  }
+
   .navLinksContainer {
     display: none;
   }
 
-  .hamburgerMenuIcon {
+  .hamburgerMenuButton {
     display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .hamburgerMenuIcon {
+    width: 3rem;
+    height: auto;
+    align-self: center;
   }
 }

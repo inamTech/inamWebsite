@@ -16,17 +16,9 @@ export default function Header() {
           corrupti accusamus accusantium ullam rem ipsa vero sequi fugiat, odit
           ad.
         </p>
-        <button className={styles.headerButton}>
-          <Link
-            to="contactUs"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            HIRE US
-          </Link>
-        </button>
+        <Link to="contactUs" spy={true} smooth={true} offset={0} duration={500}>
+          <button className={styles.headerButton}>HIRE US</button>
+        </Link>
       </div>
       <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
         <div className={styles.headerImgContainer}>

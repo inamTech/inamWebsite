@@ -9,7 +9,7 @@ export default function WhyInam() {
   return (
     <div id="whyInam" className={styles.whyInamSection}>
       <AnimationOnScroll animateIn="animate__slideInDown" animateOnce={true}>
-        <h1 className={styles.whyInamHeader}>Why Inam</h1>
+        <h1 className={styles.whyInamHeader}>Why INAM</h1>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         <p className={styles.whyInamParagraph}>

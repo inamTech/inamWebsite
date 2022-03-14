@@ -10,7 +10,7 @@
 .aboutUsHeader {
   color: white;
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-header);
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin-top: 3rem;
@@ -30,6 +30,9 @@
   font-size: var(--font-size-regular);
   text-align: center;
   line-height: var(--font-line-height);
+  max-width: 100ch;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .aboutUsbutton {
@@ -41,4 +44,24 @@
   border: 1px solid var(--button-color);
   outline: none;
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 871px) {
+  .aboutUsHeader {
+    font-size: var(--font-size-title);
+  }
+
+  .aboutUsSubtitle {
+    font-size: var(--font-size-regular);
+  }
+
+  .aboutUsParagraph {
+    font-size: var(--font-size-regular);
+    width: 100%;
+  }
+
+  .aboutUsbutton {
+    font-size: var(--font-size-regular);
+  }
 }

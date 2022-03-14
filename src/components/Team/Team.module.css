@@ -6,7 +6,7 @@
 
 .teamHeader {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-header);
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin-top: 2rem;
@@ -14,5 +14,28 @@
 
 .teamMembersContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 871px) {
+  .teamHeader {
+    font-size: var(--font-size-title);
+  }
+
+  .teamMembersContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-device-width: 871px) and (max-device-width: 1382px) {
+  .teamMembersContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
 }

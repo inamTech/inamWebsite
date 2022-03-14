@@ -15,8 +15,9 @@
 
 .serviceCardTitle {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-title);
   font-weight: var(--font-weight-medium);
+  text-align: center;
 }
 
 .serviceCardParagraph {
@@ -24,4 +25,15 @@
   font-family: var(--font-family-paragraph);
   font-size: var(--font-size-regular);
   line-height: var(--font-line-height);
+  max-width: 50ch;
+}
+
+@media screen and (max-width: 871px) {
+  .serviceCardTitle {
+    font-size: var(--font-size-subtitle);
+  }
+
+  .serviceCardParagraph {
+    font-size: var(--font-size-regular);
+  }
 }

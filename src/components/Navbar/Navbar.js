@@ -51,17 +51,15 @@ export default function Navbar() {
           </Link>
         </li>
         <li className={styles.navLink}>
-          <button className={styles.navbarButton}>
-            <Link
-              to="contactUs"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Contact Us
-            </Link>
-          </button>
+          <Link
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <button className={styles.navbarButton}>Contact Us</button>
+          </Link>
         </li>
       </ul>
       <button

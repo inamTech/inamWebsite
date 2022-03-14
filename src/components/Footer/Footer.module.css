@@ -7,15 +7,14 @@
 }
 
 .inamLogo {
-  width: 40%;
+  width: 20%;
   height: auto;
   margin-top: 2rem;
 }
 
 .footerLinksContainer {
   display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .footerLink {
@@ -24,6 +23,7 @@
   font-size: var(--font-size-regular);
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footerCopyrightText {
@@ -31,4 +31,15 @@
   font-family: var(--font-family-paragraph);
   text-align: center;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 871px) {
+  .inamLogo {
+    width: 40%;
+  }
+
+  .footerLinksContainer {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }

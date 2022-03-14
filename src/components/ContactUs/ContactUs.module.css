@@ -4,19 +4,29 @@
   overflow: hidden;
 }
 
+.contactUsContainer {
+  display: flex;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUsSplit {
+  margin-left: 5rem;
+}
+
 .contactUsHeader {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-header);
   font-weight: var(--font-weight-bold);
-  text-align: center;
   margin-bottom: 1rem;
 }
 
 .contactUsParagraph {
   font-family: var(--font-family-paragraph);
   font-size: var(--font-size-regular);
-  text-align: center;
   margin-bottom: 2rem;
+  width: 70%;
   line-height: var(--font-line-height);
 }
 
@@ -28,13 +38,13 @@
 
 .contactUsMethodContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  row-gap: 1rem;
+  column-gap: 2rem;
 }
 
 .contactUsMethodIcon {
-  width: 15%;
+  width: 10%;
   height: auto;
 }
 
@@ -42,18 +52,19 @@
   font-family: var(--font-family-heading);
   font-size: var(--font-size-regular);
   font-weight: var(--font-weight-medium);
-  text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .contactUsMethodParagraph {
   font-family: var(--font-family-paragraph);
   font-size: var(--font-size-regular);
-  text-align: center;
   line-height: var(--font-line-height);
 }
 
 .contactUsForm {
+  width: 30rem;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--button-color);
   display: flex;
   flex-direction: column;
@@ -62,6 +73,7 @@
   row-gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-right: 5rem;
 }
 
 .contactUsFormHeader {
@@ -106,4 +118,47 @@
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 871px) {
+  .contactUsContainer {
+    flex-direction: column;
+  }
+
+  .contactUsSplit {
+    margin-left: auto;
+  }
+
+  .contactUsHeader {
+    font-size: var(--font-size-title);
+    text-align: center;
+  }
+
+  .contactUsParagraph {
+    font-size: var(--font-size-regular);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactUsMethodContainer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .contactUsMethodHeader,
+  .contactUsMethodParagraph {
+    text-align: center;
+  }
+
+  .contactUsMethodIcon {
+    width: 15%;
+  }
+
+  .contactUsForm {
+    width: 90%;
+    margin-right: auto;
+  }
 }

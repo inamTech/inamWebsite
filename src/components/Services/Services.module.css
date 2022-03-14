@@ -3,24 +3,45 @@
   flex-direction: column;
   margin-top: 1rem;
   overflow: hidden;
+  row-gap: 2rem;
 }
 
 .servicesHeader {
   text-align: center;
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-header);
   font-weight: var(--font-weight-bold);
 }
 
 .servicesCardsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1.5rem;
-  margin-top: 2rem;
+  display: grid;
+  gap: 2rem 0px;
+  grid-template-areas:
+    ". ."
+    ". .";
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .animationOnScrollDiv {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 871px) {
+  .servicesHeader {
+    font-size: var(--font-size-title);
+  }
+
+  .servicesContainer {
+    row-gap: 0px;
+  }
+
+  .servicesCardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    margin-top: 2rem;
+  }
 }
