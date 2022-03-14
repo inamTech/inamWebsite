@@ -18,7 +18,7 @@
 }
 
 .footerLink {
-  color: white;
+  color: rgb(172, 172, 172);
   font-family: var(--font-family-paragraph);
   font-size: var(--font-size-regular);
   text-align: center;
@@ -26,11 +26,38 @@
   cursor: pointer;
 }
 
+.footerLink:hover {
+  animation-name: footerLinkHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .footerCopyrightText {
-  color: white;
+  color: rgb(172, 172, 172);
   font-family: var(--font-family-paragraph);
   text-align: center;
   margin-bottom: 1rem;
+}
+
+/**
+ * ----------------------------------------
+ * animation footerLinkHover
+ * ----------------------------------------
+ */
+@-webkit-keyframes footerLinkHover {
+  0% {
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes footerLinkHover {
+  0% {
+  }
+  100% {
+    color: white;
+  }
 }
 
 @media screen and (max-width: 871px) {

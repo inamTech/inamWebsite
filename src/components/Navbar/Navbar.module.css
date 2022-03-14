@@ -33,6 +33,12 @@
   cursor: pointer;
 }
 
+.navLink:hover {
+  animation-name: navLinkHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .navbarButton {
   margin-left: auto;
   margin-right: auto;
@@ -48,12 +54,64 @@
   outline: none;
 }
 
+.navbarButton:hover {
+  animation-name: navBarContactUsButton;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .hamburgerMenuButton {
   display: none;
 }
 
 .exitNavMenuIcon {
   margin-bottom: 2rem;
+}
+
+/**
+ * ----------------------------------------
+ * animation navBarContactUsButton
+ * ----------------------------------------
+ */
+@-webkit-keyframes navBarContactUsButton {
+  0% {
+  }
+  100% {
+    color: var(--main-bg-color);
+    background-color: white;
+  }
+}
+
+@keyframes navBarContactUsButton {
+  0% {
+  }
+  100% {
+    color: var(--main-bg-color);
+    background-color: white;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation navLinkHover
+ * ----------------------------------------
+ */
+@-webkit-keyframes navLinkHover {
+  0% {
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes navLinkHover {
+  0% {
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
 
 @media screen and (max-width: 871px) {

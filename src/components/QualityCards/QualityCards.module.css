@@ -3,7 +3,6 @@
   align-items: center;
   row-gap: 1.5rem;
   transform: translate(0%, -50%);
-  overflow: hidden;
   justify-content: space-around;
   max-width: 70rem;
   margin-left: auto;

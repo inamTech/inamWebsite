@@ -1,7 +1,6 @@
 .headerContainer {
   background-color: var(--main-bg-color);
   background-image: url("../../images/bg-art-header.png");
-
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: bottom;
@@ -54,6 +53,12 @@
   outline: none;
 }
 
+.headerButton:hover {
+  animation-name: headerButtonHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .headerImgContainer {
   display: flex;
   justify-content: center;
@@ -66,38 +71,24 @@
 
 /**
  * ----------------------------------------
- * animation slide-in-right
+ * animation headerButtonHover
  * ----------------------------------------
  */
-@-webkit-keyframes slide-in-right {
+@-webkit-keyframes headerButtonHover {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+    color: var(--main-bg-color);
+    background-color: white;
   }
 }
 
-@keyframes slide-in-right {
+@keyframes headerButtonHover {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+    color: var(--main-bg-color);
+    background-color: white;
   }
 }
 
@@ -172,5 +163,6 @@
 @media screen and (min-width: 1920px) {
   .headerContainer {
     background-repeat: repeat;
+    background-position-y: top;
   }
 }

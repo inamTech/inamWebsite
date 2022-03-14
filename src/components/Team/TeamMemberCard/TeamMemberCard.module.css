@@ -1,10 +1,16 @@
 .teamMemberCardContainer {
   width: 18rem;
-  outline: var(--button-color) solid 1px;
+  outline: var(--secondary-bg-color) solid 1px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.teamMemberCardContainer:hover {
+  animation-name: teamMemberCardContainer;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
 .teamMemberPic {
@@ -30,6 +36,27 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
   white-space: nowrap;
+}
+
+/**
+ * ----------------------------------------
+ * animation teamMemberCardContainer
+ * ----------------------------------------
+ */
+@-webkit-keyframes teamMemberCardContainer {
+  0% {
+  }
+  100% {
+    box-shadow: 0px 3px 8px -1px var(--dark-grey);
+  }
+}
+
+@keyframes teamMemberCardContainer {
+  0% {
+  }
+  100% {
+    box-shadow: 0px 3px 8px -1px var(--dark-grey);
+  }
 }
 
 @media screen and (max-width: 871px) {

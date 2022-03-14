@@ -9,6 +9,43 @@
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-medium);
   text-align: center;
+  cursor: default;
+}
+
+.qualityCard:hover {
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-up
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
 }
 
 @media screen and (max-width: 871px) {
