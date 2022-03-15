@@ -1,0 +1,10 @@
+.scrollToTopButtonContainer {
+  position: fixed;
+}
+
+.scrollToTopButton {
+  /* z-index: 2; */
+  bottom: 2vh;
+  background-color: #dcdcdc;
+  color: black;
+}

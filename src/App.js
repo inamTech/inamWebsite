@@ -9,6 +9,7 @@ import QualityCards from "./components/QualityCards/QualityCards";
 import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import WhyInam from "./components/WhyInam/WhyInam";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Header />
       </BlueBg>
+      <ScrollToTopButton showBelow={250} />
       <QualityCards />
       <Services />
       <Certifications />
