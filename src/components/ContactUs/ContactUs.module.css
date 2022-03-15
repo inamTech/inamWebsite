@@ -6,7 +6,7 @@
 
 .contactUsContainer {
   display: flex;
-  max-width: 70rem;
+  max-width: 110rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,9 +100,31 @@
   font-size: var(--font-size-regular);
 }
 
+.contactUsFormInputError {
+  width: 100%;
+  display: block;
+  outline: rgb(134, 0, 0) solid 1px;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  resize: none;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+}
+
 .contactUsFormInput::placeholder {
   color: #8e8e8e;
   font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+}
+
+.contactUsFormInputError::placeholder {
+  color: rgb(134, 0, 0);
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-regular);
+}
+
+.contactFormError {
+  color: rgb(134, 0, 0);
   font-size: var(--font-size-regular);
 }
 

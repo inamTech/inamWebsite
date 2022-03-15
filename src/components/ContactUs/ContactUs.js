@@ -8,25 +8,34 @@ import phoneIcon from "../../images/phone-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
 
 export default function ContactUs() {
-  function sendEmail(e) {
-    console.log("Sending Email");
-    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
+  function sendEmail(e, data) {
+    console.log("Sending Email");
+    console.log(data.target);
     emailjs
       .sendForm(
         "service_ornhkl5",
         "template_1s2g7fp",
-        e.target,
+        data.target,
         "W_YlZRNBoMR-MsRK6"
       )
       .then(
         (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+          reset();
+          alert("Email sent");
         },
         (error) => {
           console.log(error.text);
+          alert("Email cannot be sent at this time. Try again later");
         }
       );
   }
@@ -113,22 +122,49 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form action="post" onSubmit={sendEmail}>
+          <form action="post" onSubmit={handleSubmit(sendEmail)}>
             <div className={styles.contactUsFormTextInputs}>
               <input
                 id="from_name"
                 name="from_name"
-                className={styles.contactUsFormInput}
+                className={
+                  errors.from_name
+                    ? styles.contactUsFormInputError
+                    : styles.contactUsFormInput
+                }
                 type="text"
                 placeholder="Your Name *"
+                {...register("from_name", { required: true })}
               />
+              {errors.from_name && (
+                <span className={styles.contactFormError}>
+                  This field is required
+                </span>
+              )}
               <input
                 id="user_email"
                 name="user_email"
-                className={styles.contactUsFormInput}
-                type="email"
+                className={
+                  errors.user_email
+                    ? styles.contactUsFormInputError
+                    : styles.contactUsFormInput
+                }
                 placeholder="Your Email *"
+                {...register("user_email", {
+                  required: true,
+                  pattern: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                })}
               />
+              {errors.user_email?.type === "pattern" && (
+                <span className={styles.contactFormError}>
+                  Must enter a valid email
+                </span>
+              )}
+              {errors.user_email?.type === "required" && (
+                <span className={styles.contactFormError}>
+                  This field is required
+                </span>
+              )}
               <input
                 id="reply_to"
                 name="reply_to"
@@ -137,13 +173,23 @@ export default function ContactUs() {
                 placeholder="Company Name"
               />
               <textarea
-                className={styles.contactUsFormInput}
+                className={
+                  errors.message
+                    ? styles.contactUsFormInputError
+                    : styles.contactUsFormInput
+                }
                 name="message"
                 id="message"
                 cols="30"
                 rows="5"
                 placeholder="Message..."
+                {...register("message", { required: true })}
               ></textarea>
+              {errors.message && (
+                <span className={styles.contactFormError}>
+                  This field is required
+                </span>
+              )}
             </div>
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
