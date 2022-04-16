@@ -55,8 +55,8 @@ export default function ContactUs() {
             animateOnce={true}
           >
             <p className={styles.contactUsParagraph}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-              magni iste tempora aspernatur debitis fugiat.
+              Give us a call anytime. We would be happy to answer your
+              questions.
             </p>
           </AnimationOnScroll>
           {/* Hold the all the contact methods */}

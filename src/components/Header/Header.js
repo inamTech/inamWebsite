@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div id="header" className={styles.headerContainer}>
       <div className={styles.headerText}>
-        <h1 className={styles.headerTitle}>Lorem ipsum dolor</h1>
+        <h1 className={styles.headerTitle}>Vision For The Future</h1>
         <p className={styles.headerBody}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
           corrupti accusamus accusantium ullam rem ipsa vero sequi fugiat, odit

@@ -12,7 +12,8 @@ export default function ServiceCard(props) {
         alt={props.alt}
       />
       <h1 className={styles.serviceCardTitle}>{props.serviceTitle}</h1>
-      <p className={styles.serviceCardParagraph}>{props.children}</p>
+      {/* Uncomment this when it is time to add descriptions to the services */}
+      {/* <p className={styles.serviceCardParagraph}>{props.children}</p> */}
     </div>
   );
 }

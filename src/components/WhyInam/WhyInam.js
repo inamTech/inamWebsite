@@ -15,12 +15,11 @@ export default function WhyInam() {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
           <p className={styles.whyInamParagraph}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            voluptatum velit eius totam aspernatur voluptate, nihil natus aut
-            nemo. Quod voluptatem beatae tenetur dolor illo repudiandae
-            consectetur, cum aliquam? Velit officiis blanditiis iste soluta
-            voluptates? Magnam alias, numquam esse maiores natus ipsam ut
-            doloribus quam praesentium neque tenetur, voluptate odit.
+            INAM is a team of dedicated and experienced professionals who’s main
+            goal is to exceed customer expectations and build long term
+            relationship. Our services include, but not limited to Help Desk,
+            Cyber Security, System Administrators, and Project Management. We
+            have a combination of 30 years of experience.
           </p>
         </AnimationOnScroll>
       </div>

@@ -33,7 +33,13 @@ export default function AboutUs() {
         animateOnce={true}
         delay={250}
       >
-        <Link to="whyInam" spy={true} smooth={true} offset={0} duration={500}>
+        <Link
+          to="whyInam"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
           <button className={styles.aboutUsbutton}>LEARN MORE</button>
         </Link>
       </AnimationOnScroll>
