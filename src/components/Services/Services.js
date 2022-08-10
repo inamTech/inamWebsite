@@ -7,11 +7,17 @@ import helpDeskIcon from "../../images/help-desk-icon.png";
 import cyberSecurityIcon from "../../images/cyber-security-icon.png";
 import systemAdminIcon from "../../images/system-administrator-icon.png";
 import projectManagmentIcon from "../../images/project-management-icon.png";
+import recruitingIcon from "../../images/recruiting-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 export default function Services() {
   const animationOnScrollStyles = {
+    display: "flex",
+    justifyContent: "center",
+  };
+  const lastService = {
+    gridArea: "lastService",
     display: "flex",
     justifyContent: "center",
   };
@@ -73,6 +79,23 @@ export default function Services() {
             icon={projectManagmentIcon}
             alt="Project management icon."
             serviceTitle="Project Management"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            voluptates, impedit error expedita facere magni ducimus quod illo
+            nihil assumenda?
+          </ServiceCard>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll
+          animateIn="animate__slideInRight"
+          animateOnce={true}
+          style={lastService}
+        >
+          <ServiceCard
+            icon={recruitingIcon}
+            alt="Project management icon."
+            serviceTitle="Executive Sourcing and Recruiting Services"
+            lastServiceCard={true}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             voluptates, impedit error expedita facere magni ducimus quod illo

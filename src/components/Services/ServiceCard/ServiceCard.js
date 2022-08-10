@@ -5,7 +5,13 @@ import styles from "./ServiceCard.module.css";
 
 export default function ServiceCard(props) {
   return (
-    <div className={styles.serviceCardContainer}>
+    <div
+      className={
+        props.lastServiceCard
+          ? styles.lastServiceCardContainer
+          : styles.serviceCardContainer
+      }
+    >
       <img
         className={styles.serviceCardIcon}
         src={props.icon}
