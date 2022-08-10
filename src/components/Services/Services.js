@@ -87,7 +87,7 @@ export default function Services() {
         </AnimationOnScroll>
 
         <AnimationOnScroll
-          animateIn="animate__slideInRight"
+          animateIn="animate__slideInUp"
           animateOnce={true}
           style={lastService}
         >
