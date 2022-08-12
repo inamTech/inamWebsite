@@ -13,18 +13,41 @@
 }
 
 .certificationsContainer {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   justify-items: center;
+  align-items: center;
   max-width: 70rem;
   margin-left: auto;
+  margin-right: auto; */
+  display: grid; 
+  
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . .";
   margin-right: auto;
+  margin-left: auto; 
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.test {
+  width: 10%;
 }
 
 .certificationIcon {
-  width: 10%;
-  height: auto;
+  width: 30%;
+  height: 100%;  
+  justify-self: center; 
+  align-self: center; 
+}
+
+.lastCert {
+  width: 30%;
+  height: 100%;  
+  justify-self: center; 
+  align-self: center; 
 }
 
 @media screen and (max-width: 871px) {
@@ -34,14 +57,21 @@
   }
 
   .certificationsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". ."
+    ". ."
+    "lastCert lastCert";
     grid-auto-flow: row;
   }
 
   .certificationIcon {
     width: 50%;
     height: auto;
+  }
+
+  .lastCert {
+    width: 25%;
+    height: auto;
+    grid-area: lastCert;
   }
 }

@@ -25,10 +25,11 @@
 .headerTitle {
   color: white;
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-header);
+  font-size: 5rem;
   font-weight: var(--font-weight-extra-bold);
   text-align: left;
   padding-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .headerBody {
@@ -133,7 +134,7 @@
   .headerTitle {
     color: white;
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-subtitle);
+    font-size: var(--font-size-title);
     font-weight: var(--font-weight-extra-bold);
     text-align: center;
     padding-top: 1rem;
