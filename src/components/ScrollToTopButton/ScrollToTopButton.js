@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "./ScrollToTopButton.module.css";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
