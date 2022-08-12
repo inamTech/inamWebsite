@@ -97,81 +97,48 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          {/* <form name="contactUs" method="POST" data-netlify="true">
+          <form name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.contactUsFormTextInputs}>
               <input
-                id="from_name"
-                name="from_name"
-                className={
-                  errors.from_name
-                    ? styles.contactUsFormInputError
-                    : styles.contactUsFormInput
-                }
+                id="name"
+                name="name"
+                className={styles.contactUsFormInput}
                 type="text"
                 placeholder="Your Name *"
-                {...register("from_name", { required: true })}
+                required
               />
-              {errors.from_name && (
-                <span className={styles.contactFormError}>
-                  This field is required
-                </span>
-              )}
               <input
-                id="user_email"
-                name="user_email"
-                className={
-                  errors.user_email
-                    ? styles.contactUsFormInputError
-                    : styles.contactUsFormInput
-                }
+                id="email"
+                name="email"
+                className={styles.contactUsFormInput}
                 placeholder="Your Email *"
-                {...register("user_email", {
-                  required: true,
-                  pattern: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                })}
+                type={"email"}
+                required
               />
-              {errors.user_email?.type === "pattern" && (
-                <span className={styles.contactFormError}>
-                  Must enter a valid email
-                </span>
-              )}
-              {errors.user_email?.type === "required" && (
-                <span className={styles.contactFormError}>
-                  This field is required
-                </span>
-              )}
               <input
-                id="reply_to"
-                name="reply_to"
+                id="companyName"
+                name="companyName"
                 className={styles.contactUsFormInput}
                 type="text"
                 placeholder="Company Name"
               />
               <textarea
-                className={
-                  errors.message
-                    ? styles.contactUsFormInputError
-                    : styles.contactUsFormInput
-                }
+                className={styles.contactUsFormInput}
                 name="message"
                 id="message"
                 cols="30"
                 rows="5"
                 placeholder="Message..."
-                {...register("message", { required: true })}
+                required
               ></textarea>
-              {errors.message && (
-                <span className={styles.contactFormError}>
-                  This field is required
-                </span>
-              )}
               <div data-netlify-recaptcha="true"></div>
             </div>
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
             </button>
-          </form> */}
-          <form name="contact" method="post">
+          </form>
+          {/* <form name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
             <p>
               <label htmlFor="name">Name</label> <br />
@@ -188,7 +155,7 @@ export default function ContactUs() {
             <p>
               <input type="submit" value="Submit message" />
             </p>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>
