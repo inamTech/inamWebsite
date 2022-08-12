@@ -7,7 +7,6 @@ import emailIcon from "../../images/email-icon.png";
 import phoneIcon from "../../images/phone-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
-import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 
 export default function ContactUs() {
