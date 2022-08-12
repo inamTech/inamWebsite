@@ -92,7 +92,7 @@ export default function ContactUs() {
                 <div className={styles.contactUsMethodText}>
                   <h1 className={styles.contactUsMethodHeader}>Our Email:</h1>
                   <p className={styles.contactUsMethodParagraph}>
-                    contactus@inam.com
+                    info@inamtechnology.com
                   </p>
                 </div>
               </div>
@@ -122,7 +122,11 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form action="post" onSubmit={handleSubmit(sendEmail)}>
+          <form
+            action="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit(sendEmail)}
+          >
             <div className={styles.contactUsFormTextInputs}>
               <input
                 id="from_name"
@@ -191,6 +195,7 @@ export default function ContactUs() {
                 </span>
               )}
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
             </button>
