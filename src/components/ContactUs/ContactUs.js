@@ -7,13 +7,13 @@ import emailIcon from "../../images/email-icon.png";
 import phoneIcon from "../../images/phone-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 
 export default function ContactUs() {
-  const {
-    register,
-    formState: { errors },
-  } = useForm();
+  // const {
+  //   register,
+  //   formState: { errors },
+  // } = useForm();
 
   return (
     <div id="contactUs" className={styles.contactUsSection}>
@@ -97,7 +97,7 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form name="contactUs" method="POST" data-netlify="true">
+          {/* <form name="contactUs" method="POST" data-netlify="true">
             <div className={styles.contactUsFormTextInputs}>
               <input
                 id="from_name"
@@ -170,6 +170,24 @@ export default function ContactUs() {
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
             </button>
+          </form> */}
+          <form name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+              <label htmlFor="name">Name</label> <br />
+              <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+              <label htmlFor="email">Email</label> <br />
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+              <label htmlFor="message">Message</label> <br />
+              <textarea id="message" name="message" required></textarea>
+            </p>
+            <p>
+              <input type="submit" value="Submit message" />
+            </p>
           </form>
         </div>
       </div>
