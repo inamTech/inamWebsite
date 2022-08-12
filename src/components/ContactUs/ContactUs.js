@@ -97,7 +97,7 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form name="contact" method="post">
+          <form name="contact" method="post" data-netlify-recaptcha="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.contactUsFormTextInputs}>
               <input
