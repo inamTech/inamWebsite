@@ -7,14 +7,8 @@ import emailIcon from "../../images/email-icon.png";
 import phoneIcon from "../../images/phone-icon.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
-// import { useForm } from "react-hook-form";
 
 export default function ContactUs() {
-  // const {
-  //   register,
-  //   formState: { errors },
-  // } = useForm();
-
   return (
     <div id="contactUs" className={styles.contactUsSection}>
       <div className={styles.contactUsContainer}>
@@ -97,7 +91,7 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form name="contact" method="post" data-netlify-recaptcha="true">
+          <form name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.contactUsFormTextInputs}>
               <input
@@ -132,30 +126,11 @@ export default function ContactUs() {
                 placeholder="Message..."
                 required
               ></textarea>
-              <div data-netlify-recaptcha="true"></div>
             </div>
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
             </button>
           </form>
-          {/* <form name="contact" method="post">
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-              <label htmlFor="name">Name</label> <br />
-              <input type="text" id="name" name="name" required />
-            </p>
-            <p>
-              <label htmlFor="email">Email</label> <br />
-              <input type="email" id="email" name="email" required />
-            </p>
-            <p>
-              <label htmlFor="message">Message</label> <br />
-              <textarea id="message" name="message" required></textarea>
-            </p>
-            <p>
-              <input type="submit" value="Submit message" />
-            </p>
-          </form> */}
         </div>
       </div>
     </div>
