@@ -122,11 +122,7 @@ export default function ContactUs() {
         {/* Beginning of contact us form */}
         <div className={styles.contactUsForm}>
           <h1 className={styles.contactUsFormHeader}>Get In Touch</h1>
-          <form
-            action="POST"
-            data-netlify="true"
-            onSubmit={handleSubmit(sendEmail)}
-          >
+          <form name="contactUs" method="POST" data-netlify="true">
             <div className={styles.contactUsFormTextInputs}>
               <input
                 id="from_name"
@@ -194,8 +190,8 @@ export default function ContactUs() {
                   This field is required
                 </span>
               )}
+              <div data-netlify-recaptcha="true"></div>
             </div>
-            <div data-netlify-recaptcha="true"></div>
             <button type="submit" className={styles.contactUsFormButton}>
               SEND MESSAGE
             </button>
