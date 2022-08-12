@@ -12,33 +12,9 @@ import { useForm } from "react-hook-form";
 
 export default function ContactUs() {
   const {
-    reset,
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm();
-
-  function sendEmail(e, data) {
-    console.log("Sending Email");
-    console.log(data.target);
-    emailjs
-      .sendForm(
-        "service_ornhkl5",
-        "template_1s2g7fp",
-        data.target,
-        "W_YlZRNBoMR-MsRK6"
-      )
-      .then(
-        (result) => {
-          reset();
-          alert("Email sent");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Email cannot be sent at this time. Try again later");
-        }
-      );
-  }
 
   return (
     <div id="contactUs" className={styles.contactUsSection}>
