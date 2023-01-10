@@ -25,11 +25,7 @@ export default function Team() {
           animateOnce={true}
           style={animationOnScrollStyles}
         >
-          <TeamMemberCard
-            picture={johnByrdPic}
-            name="John Byrd"
-            position="Vice President"
-          />
+          <TeamMemberCard picture={johnByrdPic} name="John Byrd" position="VP of Operations" />
         </AnimationOnScroll>
         <AnimationOnScroll
           animateIn="animate__slideInLeft"
@@ -39,7 +35,7 @@ export default function Team() {
           <TeamMemberCard
             picture={calvinDavisPic}
             name="Calvin Davis"
-            position="Vice President"
+            position="VP of Financial Analysis"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -50,7 +46,7 @@ export default function Team() {
           <TeamMemberCard
             picture={chrisDavisPic}
             name="Chris Davis"
-            position="Vice President"
+            position="VP of Business Development"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -58,11 +54,7 @@ export default function Team() {
           animateOnce={true}
           style={animationOnScrollStyles}
         >
-          <TeamMemberCard
-            picture={shawnSmithPic}
-            name="Shawn Smith"
-            position="President"
-          />
+          <TeamMemberCard picture={shawnSmithPic} name="Shawn Smith" position="President and CEO" />
         </AnimationOnScroll>
       </div>
     </div>
