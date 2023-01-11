@@ -3,8 +3,6 @@
 import React from "react";
 import styles from "./Services.module.css";
 import ServiceCard from "./ServiceCard/ServiceCard";
-import helpDeskIcon from "../../images/help-desk-icon.png";
-import cyberSecurityIcon from "../../images/cyber-security-icon.png";
 import systemAdminIcon from "../../images/system-administrator-icon.png";
 import projectManagmentIcon from "../../images/project-management-icon.png";
 import recruitingIcon from "../../images/recruiting-icon.png";
@@ -16,11 +14,12 @@ export default function Services() {
     display: "flex",
     justifyContent: "center",
   };
-  const lastService = {
-    gridArea: "lastService",
-    display: "flex",
-    justifyContent: "center",
-  };
+  // This may need to be used for when there is an odd amount of services
+  // const lastService = {
+  //   gridArea: "lastService",
+  //   display: "flex",
+  //   justifyContent: "center",
+  // };
 
   return (
     <div id="services" className={styles.servicesContainer}>
