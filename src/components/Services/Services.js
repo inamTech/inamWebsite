@@ -21,57 +21,27 @@ export default function Services() {
     display: "flex",
     justifyContent: "center",
   };
+
   return (
     <div id="services" className={styles.servicesContainer}>
       <h1 className={styles.servicesHeader}>Our Services</h1>
       <div className={styles.servicesCardsContainer}>
         <AnimationOnScroll
-          animateIn="animate__slideInLeft"
-          animateOnce={true}
-          style={animationOnScrollStyles}
-        >
-          <ServiceCard
-            icon={helpDeskIcon}
-            alt="Help desk icon."
-            serviceTitle="Help Desk"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            voluptates, impedit error expedita facere magni ducimus quod illo
-            nihil assumenda?
-          </ServiceCard>
-        </AnimationOnScroll>
-        <AnimationOnScroll
-          animateIn="animate__slideInRight"
-          animateOnce={true}
-          style={animationOnScrollStyles}
-        >
-          <ServiceCard
-            icon={cyberSecurityIcon}
-            alt="Cyber security icon."
-            serviceTitle="Cyber Security"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            voluptates, impedit error expedita facere magni ducimus quod illo
-            nihil assumenda?
-          </ServiceCard>
-        </AnimationOnScroll>
-        <AnimationOnScroll
-          animateIn="animate__slideInLeft"
+          animateIn="animate__slideInUp"
           animateOnce={true}
           style={animationOnScrollStyles}
         >
           <ServiceCard
             icon={systemAdminIcon}
             alt="System administration icon."
-            serviceTitle="System Administration"
+            serviceTitle="Professional and Managed Services"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            voluptates, impedit error expedita facere magni ducimus quod illo
-            nihil assumenda?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates, impedit
+            error expedita facere magni ducimus quod illo nihil assumenda?
           </ServiceCard>
         </AnimationOnScroll>
         <AnimationOnScroll
-          animateIn="animate__slideInRight"
+          animateIn="animate__slideInUp"
           animateOnce={true}
           style={animationOnScrollStyles}
         >
@@ -80,26 +50,23 @@ export default function Services() {
             alt="Project management icon."
             serviceTitle="Project Management"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            voluptates, impedit error expedita facere magni ducimus quod illo
-            nihil assumenda?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates, impedit
+            error expedita facere magni ducimus quod illo nihil assumenda?
           </ServiceCard>
         </AnimationOnScroll>
 
         <AnimationOnScroll
           animateIn="animate__slideInUp"
           animateOnce={true}
-          style={lastService}
+          style={animationOnScrollStyles}
         >
           <ServiceCard
             icon={recruitingIcon}
             alt="Project management icon."
             serviceTitle="Executive Sourcing and Recruiting Services"
-            lastServiceCard={true}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            voluptates, impedit error expedita facere magni ducimus quod illo
-            nihil assumenda?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates, impedit
+            error expedita facere magni ducimus quod illo nihil assumenda?
           </ServiceCard>
         </AnimationOnScroll>
       </div>
