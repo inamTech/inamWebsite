@@ -1,8 +1,6 @@
 // This is the component for the Header.
 import React from "react";
 import styles from "./Header.module.css";
-import headerImg from "../../images/header-img.png";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import { Link } from "react-scroll";
 
@@ -10,13 +8,14 @@ export default function Header() {
   return (
     <div id="header" className={styles.headerContainer}>
       <div className={styles.headerText}>
-        <h1 className={styles.headerTitle}>Vision For The Future</h1>
+        <h2 className={styles.subTitle}>Vision For The Future</h2>
+        <h1 className={styles.headerTitle}>INAM</h1>
         {/* Uncomment this when want to add body to header */}
-        {/* <p className={styles.headerBody}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
-          corrupti accusamus accusantium ullam rem ipsa vero sequi fugiat, odit
-          ad.
-        </p> */}
+        <p className={styles.headerBody}>
+          It’s Not About Me (INAM) Technology is a customer centric IT Consulting Company that helps
+          provide affordable but efficient services to help agencies enhance their businesses and
+          deploy mission critical projects.
+        </p>
         <Link
           className={styles.hireUsLink}
           to="contactUs"
@@ -28,15 +27,6 @@ export default function Header() {
           <button className={styles.headerButton}>HIRE US</button>
         </Link>
       </div>
-      <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
-        <div className={styles.headerImgContainer}>
-          <img
-            className={styles.headerImg}
-            src={headerImg}
-            alt="Computer with INAM logo on the screen."
-          />
-        </div>
-      </AnimationOnScroll>
     </div>
   );
 }

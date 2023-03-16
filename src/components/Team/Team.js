@@ -35,7 +35,7 @@ export default function Team() {
           <TeamMemberCard
             picture={calvinDavisPic}
             name="Calvin Davis"
-            position="VP of Financial Analysis"
+            position="VP of Business Development"
           />
         </AnimationOnScroll>
         <AnimationOnScroll
@@ -46,7 +46,7 @@ export default function Team() {
           <TeamMemberCard
             picture={chrisDavisPic}
             name="Chris Davis"
-            position="VP of Business Development"
+            position="VP of Financial Analysis"
           />
         </AnimationOnScroll>
         <AnimationOnScroll

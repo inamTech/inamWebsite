@@ -28,78 +28,36 @@ export default function Navbar() {
 
   return (
     <div id="navbar" className={styles.navbarContainer}>
-      <img
-        onClick={refreshPage}
-        className={styles.inamLogoMobile}
-        src={inamLogo}
-        alt="INAM Logo"
-      />
+      <img onClick={refreshPage} className={styles.inamLogoMobile} src={inamLogo} alt="INAM Logo" />
       <ul className={styles.navLinksContainer}>
         <li className={styles.navLink}>
-          <Link
-            to="header"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
+          <Link to="header" spy={true} smooth={true} offset={-50} duration={500}>
             Home
           </Link>
         </li>
         <li className={styles.navLink}>
-          <Link
-            to="aboutUs"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            About Us
-          </Link>
-        </li>
-        <li className={styles.navLink}>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-125}
-            duration={500}
-          >
+          <Link to="services" spy={true} smooth={true} offset={-125} duration={500}>
             Services
           </Link>
         </li>
         <li className={styles.navLink}>
-          <Link
-            to="whyInam"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
+          <Link to="aboutUs" spy={true} smooth={true} offset={-50} duration={500}>
+            About Us
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to="whyInam" spy={true} smooth={true} offset={-100} duration={500}>
             Why INAM
           </Link>
         </li>
         <li className={styles.navLink}>
-          <Link
-            to="contactUs"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
+          <Link to="contactUs" spy={true} smooth={true} offset={-100} duration={500}>
             <button className={styles.navbarButton}>Contact Us</button>
           </Link>
         </li>
       </ul>
-      <button
-        className={styles.hamburgerMenuButton}
-        onClick={openDrawerHandler}
-      >
-        <img
-          className={styles.hamburgerMenuIcon}
-          src={hamburgerMenu}
-          alt="Menu"
-        />
+      <button className={styles.hamburgerMenuButton} onClick={openDrawerHandler}>
+        <img className={styles.hamburgerMenuIcon} src={hamburgerMenu} alt="Menu" />
       </button>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>

@@ -17,29 +17,17 @@ export default function AboutUs() {
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__slideInUp" animateOnce={true}>
         <p className={styles.aboutUsParagraph}>
-          INAM Technology LLC is a Women, Minority, and Disabled Veteran Owned
-          Small Business IT firm, providing an exclusive range of IT services to
-          the valued customers. INAM is a team of dedicated and experienced
-          professionals, having multiple expertise and certifications in the
-          domain of Information Technology. With customized services and
-          customer centric approach, we always strive to exceed the customer
-          expectations and build long-term relations with them. Our services
-          include, but not limited to Help Desk, Cyber Security, System
-          Administrators, and Project Management.
+          INAM Technology LLC is a Women, Minority, and Disabled Veteran Owned IT consultant,
+          providing an exclusive range of services to the valued customer. INAM is a team of
+          dedicated and experienced professionals, having multiple certifications and expertise in
+          the domain of Information Technology. With a customer centric approach, we always strive
+          to exceed the expectations and build long-term relationships. Our services include, but
+          not limited to Professional and Managed Services, Project Management, and Executive
+          Sourcing and Recruiting.
         </p>
       </AnimationOnScroll>
-      <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        animateOnce={true}
-        delay={250}
-      >
-        <Link
-          to="whyInam"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true} delay={250}>
+        <Link to="whyInam" spy={true} smooth={true} offset={-100} duration={500}>
           <button className={styles.aboutUsbutton}>LEARN MORE</button>
         </Link>
       </AnimationOnScroll>
